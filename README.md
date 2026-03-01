@@ -58,6 +58,30 @@ The work demonstrates that temporal survival modeling significantly outperforms 
 
 ---
 
+## 📊 Key Results
+
+| Model | Dataset | Test Concordance (C-Index) |
+|-------|---------|----------------------------|
+| Cox Proportional Hazards | CMAPSS (FD001) | 0.46 |
+| DeepSurv | CMAPSS (FD001) | 0.51 |
+| LSTM Survival | CMAPSS (FD001) | 0.81 |
+| Large-Scale LSTM Survival | CMAPSS (FD001–FD004) | **0.85** |
+
+Temporal survival modeling significantly outperforms static survival models for degradation forecasting.
+
+
+## 🔬 Methodology
+
+1. Physics-informed degradation simulation
+2. Static survival modeling (Cox PH)
+3. Neural Cox model (DeepSurv)
+4. Temporal sequence modeling (LSTM Survival)
+5. Large-scale training on 130k+ sequences
+
+The framework demonstrates the importance of time-dependent modeling in predictive maintenance systems.
+
+
+
 ## Author
 
 Satwik Pvnr  
