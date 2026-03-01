@@ -14,6 +14,15 @@ This project explores advanced survival modeling techniques for reliability pred
 The work demonstrates that temporal survival modeling significantly outperforms static survival approaches for degradation forecasting.
 
 ---
+## Research Abstract
+
+This project investigates large-scale survival modeling for reliability prediction using both physics-based simulation and real-world aerospace degradation data (NASA CMAPSS).
+
+We first demonstrate that static survival models (Cox Proportional Hazards and DeepSurv) fail to capture degradation dynamics in time-series settings (C-index ≈ 0.47–0.52). We then develop a temporal LSTM-based survival framework trained on 130,000+ sequences across multiple operating conditions (FD001–FD004), achieving a concordance index of 0.85.
+
+We further explore Transformer-based survival modeling and introduce physics-guided monotonicity regularization to enforce degradation consistency. Experimental results highlight the importance of temporal inductive bias in modeling monotonic failure processes.
+
+This work bridges statistical survival analysis, deep learning, and reliability engineering for predictive maintenance applications.
 
 ## Key Results
 
